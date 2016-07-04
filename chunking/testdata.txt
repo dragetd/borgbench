@@ -1,0 +1,3 @@
+images: only jpg images
+rootfs: Linux root filesystem with binaries and config files
+vm: First ~8GB if an WindowsXP virtual machine image

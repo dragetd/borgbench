@@ -9,7 +9,7 @@ def runConfig(comp, cmin, cmax, cavg, data):
     # make sure there is no leftover repository. This will throw a warning on the shell if there is no folder, but it can be ignored
     subprocess.call(["rm", "-r", "/tmp/borgbench/"+comp])
     # run borg
-    subprocess.call(["borg", "init", "/tmp/borgbench/"+comp])
+    subprocess.call(["borg", "init", "-e", "none", "/tmp/borgbench/"+comp])
     proc=subprocess.Popen(["borg", "create", "/tmp/borgbench/"+comp+"::test", "-v", "-s", "-C", comp, "--chunker-params", str(cmin)+","+str(cmax)+","+str(cavg)+",4095", data], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     output = proc.stderr.read()
     # parse output
