@@ -1,0 +1,5 @@
+Source: http://ftp.de.debian.org/debian-cd/8.5.0-live/amd64/iso-hybrid/
+File: debian-live-8.5.0-amd64-standard.iso
+M5DSUM: 3605c5a42ca71c54b2d681abe3ef8d99
+Extracted: live/filesystem.squashfs
+du -bs: 999720429 debian-live-filesystem
