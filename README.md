@@ -1,3 +1,7 @@
+# Update:
+For more decent benchmarking, a cleaned up version is being developed here: https://github.com/n-st/borgbench
+Thus this repository is deprecated.
+
 # borgbench
 
 A crude python script to benchmark borg (https://github.com/borgbackup/borg/) with different settings for compression and deduplication.
